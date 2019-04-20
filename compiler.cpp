@@ -82,7 +82,13 @@ int clear() {
 	return 0;
 }
 
+void print_info() {
+	std::cout << "exec num1 num2 - print a gcd(num1, num2)" << std::endl;
+	std::cout << "patch num - change a flag in function gcd. If flag equal 1 then gcd always return 1000" << std::endl;
+	std::cout << "exit - close programm" << std::endl;
+}
 int main(int argc, char** argv, char** env) {
+	print_info();
 	if (map() == -1) {
 		exit(EXIT_FAILURE);
 	}
